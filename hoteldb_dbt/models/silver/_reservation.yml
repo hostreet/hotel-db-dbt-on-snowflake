@@ -1,0 +1,30 @@
+version: 2
+
+
+models:
+- name: reservation
+  description: 'mart model guest'
+  columns:
+  - name: RESERVATION_ID
+    description: 'Primary key for RESERVATION_ID'
+    data_tests:
+      - unique
+      - not_null
+  - name: GUEST_ID
+    description: 'GUEST_ID name'
+    data_tests:
+      - not_null
+  - name: ROOM_ID
+    description: 'ROOM_ID'
+  - name: CHECK_IN_DATE
+    description: 'CHECK_IN_DATE'
+  - name: CHECK_OUT_DATE
+    description: 'CHECK_OUT_DATE code'
+  - name: TOTAL_AMOUNT
+    description: 'TOTAL_AMOUNT'
+  - name: CHANNEL
+    description: 'CHANNEL'
+  - name: STATUS
+    description: 'STATUS'
+  - name: LOAD_DT
+    description: 'LOAD_DT'

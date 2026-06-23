@@ -1,0 +1,23 @@
+hoteldb:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: hoteldb_dev
+      schema: silver
+      warehouse: hotel_db_dbt_wh
+      threads: 8
+    prd:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: hoteldb_prd
+      schema: silver
+      warehouse: hotel_db_dbt_wh
+      threads: 8
+      
+

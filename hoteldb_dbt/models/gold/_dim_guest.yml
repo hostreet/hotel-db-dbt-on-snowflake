@@ -1,0 +1,25 @@
+version: 2
+
+
+models:
+- name: dim_guest
+  description: 'mart model guest'
+  columns:
+  - name: GUEST_ID
+    description: 'Primary key for guest'
+    data_tests:
+      - unique
+      - not_null
+  - name: GUEST_NAME
+    description: 'guest name'
+    data_tests:
+      - not_null
+  - name: PHONE
+    description: 'phon'
+  - name: EMAIL
+    description: 'email'
+  - name: COUNTRY_CODE
+    description: 'country code'
+  - name: CREATED_AT
+    description: 'create by timezone'
+

@@ -1,0 +1,25 @@
+version: 2
+
+
+models:
+- name: dim_room
+  description: 'mart model guest'
+  columns:
+  - name: ROOM_ID
+    description: 'Primary key for ROOM_ID'
+    data_tests:
+      - unique
+      - not_null
+  - name: HOTEL_NAME
+    description: 'HOTEL_NAME'
+    data_tests:
+      - not_null
+  - name: ROOM_TYPE
+    description: 'ROOM_TYPE'
+  - name: ROOM_NO
+    description: 'ROOM_NO'
+  - name: BASE_PRICE
+    description: 'BASE_PRICE code'
+  - name: LOAD_DT
+    description: 'LOAD_DT'
+ 

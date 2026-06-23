@@ -1,0 +1,92 @@
+version: 2
+sources:
+- name: hoteldb_raw
+  description: 'hotel raw data'
+  database: "{{ target.database }}"
+  schema: bronze
+  tables:
+  - name: guest_raw
+    description: 'GUEST reference data'
+    columns:
+    - name: GUEST_ID
+      description: 'Primary key for GUEST_ID'
+      data_tests:
+        - not_null
+        # - dbt_utils.accepted_range:  # Numeric range validation
+        #     min_value: 1
+        #     max_value: 1000
+    - name: GUEST_NAME
+      description: 'GUEST name'
+      data_tests:
+        - not_null
+    - name: PHONE
+      description: 'PHONE code'
+    - name: EMAIL
+      description: 'EMAIL code'
+      data_tests:
+        - not_null
+    - name: COUNTRY
+      description: 'COUNTRY identifier'
+    - name: LOAD_DT
+      description: 'LOAD date'
+   
+  - name: room_raw
+    description: 'Room data'
+    columns:
+    - name: ROOM_ID
+      description: 'Primary key for ROOM_ID'
+      data_tests:
+        - not_null
+    - name: HOTEL_NAME
+      description: 'HOTEL_NAME owner first name'
+      data_tests:
+        - not_null
+    - name: ROOM_TYPE
+      description: 'ROOM_TYPE owner last name'
+      data_tests:
+        - not_null
+    - name: ROOM_NO
+      description: 'ROOM_NO is based'
+    - name: BASE_PRICE
+      description: 'BASE_PRICE is based'
+    - name: E_MAIL
+      description: 'Contact email'
+      data_tests:
+        - not_null
+    - name: LOAD_DT
+      description: 'LOAD date'
+      
+  - name: reservation_raw
+    description: 'RESERVATION_ID data'
+    columns:
+    - name: GUEST_ID
+      description: 'Primary key for GUEST_ID'
+      data_tests:
+        - unique
+        - not_null
+    - name: ROOM_ID
+      description: 'Standard ROOM_ID identifier'
+      data_tests:
+        - unique
+    - name: CHECK_IN_DATE
+      description: 'CHECK_IN_DATE'
+      data_tests:
+        - not_null
+    - name: CHECK_OUT_DATE
+      description: 'CHECK_OUT_DATE'
+      data_tests:
+        - not_null
+    - name: TOTAL_AMOUNT
+      description: 'TOTAL_AMOUNT identifier'
+    - name: CHANNEL
+      description: 'CHANNEL code'
+      data_tests:
+        - not_null
+    - name: STATUS
+      description: 'STATUS name'
+      data_tests:
+        - not_null
+    - name: LOAD_DT
+      description: 'LOAD date'
+      data_tests:
+        - not_null

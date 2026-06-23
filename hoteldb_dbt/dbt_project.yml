@@ -1,0 +1,43 @@
+## Project
+name: hoteldb
+version: "1.0"
+config-version: 2
+profile: hoteldb
+
+## Sources
+model-paths: [models]
+analysis-paths: [analysis]
+test-paths: [tests]
+seed-paths: [seeds]
+macro-paths: [macros]
+snapshot-paths: [snapshots]
+
+## Target
+target-path: target
+clean-targets: [target, dbt_modules]
+
+## 환경별 변수 
+vars:
+  # dbt 모델 적재 대상
+  hoteldb_name: "{{ 'hoteldb_prd' if target.name == 'prd' else 'hoteldb_dev' }}"
+
+
+## Models
+models:
+  hoteldb:
+    +persist_docs:
+      relation: true                    # 테이블 COMMENT에 description 반영
+      columns: true                     # 컬럼 COMMENT에 description 반영
+    +copy_grants: true                  # 모델 재생성 시 기존 GRANT 유지 (PROD 필수)
+    bronze:
+      +materialized: table
+      +schema : bronze 
+      +query_tag: 'app=dbt;project=hoteldb_bronze'  # QUERY_HISTORY에서 추적용      
+    silver:
+      +materialized: table
+      +schema : silver
+      +query_tag: 'app=dbt;project=hoteldb_silver'  # QUERY_HISTORY에서 추적용      
+    gold:
+      +materialized: table
+      +schema : gold
+      +query_tag: 'app=dbt;project=hoteldb_gold'  # QUERY_HISTORY에서 추적용      
