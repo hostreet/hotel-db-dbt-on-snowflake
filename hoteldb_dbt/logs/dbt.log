@@ -7162,3 +7162,1402 @@ alter session unset query_tag
 [0m00:46:02.084274 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.321763, "process_in_blocks": "0", "process_kernel_time": 0.79, "process_mem_max_rss": "532784", "process_out_blocks": "0", "process_user_time": 6.18}
 [0m00:46:02.084906 [debug] [Dummy-1   ]: Command `cli run` succeeded at 00:46:02.084648 after 6.32 seconds
 [0m00:46:02.085462 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 23:49:28.469083 | d5096373-5e93-440d-ba2b-c1ac4acbeb4f ==============================
+[0m23:49:28.469083 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m23:49:28.470008 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m23:49:28.748875 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m23:49:29.316181 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m23:49:29.527425 [info ] [Dummy-1   ]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m23:49:29.528139 [debug] [Dummy-1   ]: previous checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, current checksum: 33df0a7c2b064ca874e22c7c269979c0fa9a17708ce85db6c6be240b76d70fac
+[0m23:49:29.528598 [info ] [Dummy-1   ]: Unable to do partial parsing because profile has changed
+[0m23:49:30.980294 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.hoteldb.bronze
+[0m23:49:31.172303 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m23:49:31.174518 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m23:49:31.209474 [info ] [Dummy-1   ]: hoteldb.gold.dim_guest
+[0m23:49:31.210061 [info ] [Dummy-1   ]: hoteldb.silver.guest
+[0m23:49:31.210521 [info ] [Dummy-1   ]: source:hoteldb.hoteldb_raw.guest_raw
+[0m23:49:31.210925 [info ] [Dummy-1   ]: hoteldb.gold.not_null_dim_guest_GUEST_ID
+[0m23:49:31.211328 [info ] [Dummy-1   ]: hoteldb.gold.not_null_dim_guest_GUEST_NAME
+[0m23:49:31.211717 [info ] [Dummy-1   ]: hoteldb.silver.not_null_guest_GUEST_ID
+[0m23:49:31.212118 [info ] [Dummy-1   ]: hoteldb.silver.not_null_guest_GUEST_NAME
+[0m23:49:31.212518 [info ] [Dummy-1   ]: hoteldb.bronze.source_not_null_hoteldb_raw_guest_raw_EMAIL
+[0m23:49:31.212923 [info ] [Dummy-1   ]: hoteldb.bronze.source_not_null_hoteldb_raw_guest_raw_GUEST_ID
+[0m23:49:31.213344 [info ] [Dummy-1   ]: hoteldb.bronze.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME
+[0m23:49:31.213727 [info ] [Dummy-1   ]: hoteldb.gold.unique_dim_guest_GUEST_ID
+[0m23:49:31.214108 [info ] [Dummy-1   ]: hoteldb.silver.unique_guest_GUEST_ID
+[0m23:49:31.215731 [debug] [Dummy-1   ]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 2.8218207, "process_in_blocks": "0", "process_kernel_time": 0.85, "process_mem_max_rss": "462080", "process_out_blocks": "0", "process_user_time": 5.11}
+[0m23:49:31.216346 [debug] [Dummy-1   ]: Command `cli list` succeeded at 23:49:31.216097 after 2.82 seconds
+[0m23:49:31.216904 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 23:51:03.638728 | 699825d8-cb77-4736-9dff-d1b77132f04b ==============================
+[0m23:51:03.638728 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m23:51:03.639663 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m23:51:03.923871 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m23:51:04.502285 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m23:51:04.797711 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:51:04.798494 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:51:04.806379 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.hoteldb.bronze
+[0m23:51:04.957805 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m23:51:04.960530 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m23:51:05.001628 [info ] [Dummy-1   ]: hoteldb.gold.dim_guest
+[0m23:51:05.002303 [info ] [Dummy-1   ]: hoteldb.gold.not_null_dim_guest_GUEST_ID
+[0m23:51:05.002865 [info ] [Dummy-1   ]: hoteldb.gold.not_null_dim_guest_GUEST_NAME
+[0m23:51:05.003320 [info ] [Dummy-1   ]: hoteldb.gold.unique_dim_guest_GUEST_ID
+[0m23:51:05.005356 [debug] [Dummy-1   ]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 1.4409426, "process_in_blocks": "0", "process_kernel_time": 0.83, "process_mem_max_rss": "404464", "process_out_blocks": "0", "process_user_time": 3.8}
+[0m23:51:05.006094 [debug] [Dummy-1   ]: Command `cli list` succeeded at 23:51:05.005800 after 1.44 seconds
+[0m23:51:05.006774 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 23:54:56.562019 | f0ab2dbc-0535-4246-9115-2ce9c054ab33 ==============================
+[0m23:54:56.562019 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m23:54:56.562943 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt ', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': '/tmp/dbt/target/', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m23:54:56.850840 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m23:54:57.409332 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m23:54:57.686775 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:54:57.687801 [debug] [Dummy-1   ]: Partial parsing: updated file: hoteldb://models/gold/dim_guest.sql
+[0m23:54:58.270609 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.hoteldb.bronze
+[0m23:54:58.381816 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m23:54:58.383889 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m23:54:58.418759 [info ] [Dummy-1   ]: Found 6 models, 33 data tests, 3 sources, 476 macros
+[0m23:54:58.422561 [info ] [Dummy-1   ]: 
+[0m23:54:58.423197 [info ] [Dummy-1   ]: Concurrency: 8 threads (target='dev')
+[0m23:54:58.423672 [info ] [Dummy-1   ]: 
+[0m23:54:58.424420 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m23:54:58.431370 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_dev_silver'
+[0m23:54:58.432581 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_dev_gold'
+[0m23:54:58.522266 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m23:54:58.523002 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m23:54:58.523719 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m23:54:58.524417 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m23:54:58.524940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:54:58.525438 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:54:59.249177 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.724 seconds
+[0m23:54:59.253770 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m23:54:59.254369 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+show objects in hoteldb_dev.gold
+    limit 10000
+    
+;
+[0m23:54:59.274589 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.750 seconds
+[0m23:54:59.276656 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m23:54:59.277185 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+show objects in hoteldb_dev.silver
+    limit 10000
+    
+;
+[0m23:54:59.509840 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.255 seconds
+[0m23:54:59.512133 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m23:54:59.513000 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m23:54:59.515510 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.238 seconds
+[0m23:54:59.517635 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m23:54:59.518277 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m23:54:59.592771 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.079 seconds
+[0m23:54:59.604413 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.086 seconds
+[0m23:54:59.614500 [debug] [Thread-2 (]: Began running node model.hoteldb.guest
+[0m23:54:59.615147 [debug] [Thread-3 (]: Began running node model.hoteldb.reservation
+[0m23:54:59.615709 [debug] [Thread-4 (]: Began running node model.hoteldb.room
+[0m23:54:59.616320 [debug] [Thread-5 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265
+[0m23:54:59.617240 [debug] [Thread-6 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe
+[0m23:54:59.617858 [debug] [Thread-7 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667
+[0m23:54:59.618587 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_hoteldb_dev_silver, now model.hoteldb.guest)
+[0m23:54:59.619150 [debug] [Thread-8 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d
+[0m23:54:59.619700 [debug] [Thread-9 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7
+[0m23:54:59.620375 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_hoteldb_dev_gold, now model.hoteldb.reservation)
+[0m23:54:59.621121 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.hoteldb.room'
+[0m23:54:59.621766 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265'
+[0m23:54:59.622437 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe'
+[0m23:54:59.623117 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667'
+[0m23:54:59.623676 [debug] [Thread-2 (]: Began compiling node model.hoteldb.guest
+[0m23:54:59.624335 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d'
+[0m23:54:59.624982 [debug] [Thread-9 (]: Acquiring new snowflake connection 'test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7'
+[0m23:54:59.625487 [debug] [Thread-3 (]: Began compiling node model.hoteldb.reservation
+[0m23:54:59.626003 [debug] [Thread-4 (]: Began compiling node model.hoteldb.room
+[0m23:54:59.626506 [debug] [Thread-5 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265
+[0m23:54:59.626999 [debug] [Thread-6 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe
+[0m23:54:59.627484 [debug] [Thread-7 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667
+[0m23:54:59.637764 [debug] [Thread-2 (]: Writing injected SQL for node "model.hoteldb.guest"
+[0m23:54:59.638539 [debug] [Thread-8 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d
+[0m23:54:59.639159 [debug] [Thread-9 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7
+[0m23:54:59.643912 [debug] [Thread-3 (]: Writing injected SQL for node "model.hoteldb.reservation"
+[0m23:54:59.648771 [debug] [Thread-4 (]: Writing injected SQL for node "model.hoteldb.room"
+[0m23:54:59.663358 [debug] [Thread-5 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265"
+[0m23:54:59.669578 [debug] [Thread-6 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe"
+[0m23:54:59.676811 [debug] [Thread-7 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667"
+[0m23:54:59.683454 [debug] [Thread-8 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d"
+[0m23:54:59.684012 [debug] [Thread-2 (]: Began executing node model.hoteldb.guest
+[0m23:54:59.690010 [debug] [Thread-9 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7"
+[0m23:54:59.691091 [debug] [Thread-3 (]: Began executing node model.hoteldb.reservation
+[0m23:54:59.691963 [debug] [Thread-4 (]: Began executing node model.hoteldb.room
+[0m23:54:59.692692 [debug] [Thread-5 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265
+[0m23:54:59.693520 [debug] [Thread-6 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe
+[0m23:54:59.694503 [debug] [Thread-7 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667
+[0m23:54:59.695483 [debug] [Thread-2 (]: Finished running node model.hoteldb.guest
+[0m23:54:59.696061 [debug] [Thread-8 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d
+[0m23:54:59.697062 [debug] [Thread-3 (]: Finished running node model.hoteldb.reservation
+[0m23:54:59.697604 [debug] [Thread-9 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7
+[0m23:54:59.698485 [debug] [Thread-4 (]: Finished running node model.hoteldb.room
+[0m23:54:59.699291 [debug] [Thread-5 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265
+[0m23:54:59.700062 [debug] [Thread-6 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe
+[0m23:54:59.700874 [debug] [Thread-7 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667
+[0m23:54:59.701535 [debug] [Thread-2 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d
+[0m23:54:59.702638 [debug] [Thread-8 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d
+[0m23:54:59.703233 [debug] [Thread-3 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc
+[0m23:54:59.704320 [debug] [Thread-9 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7
+[0m23:54:59.704920 [debug] [Thread-4 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342
+[0m23:54:59.705747 [debug] [Thread-5 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a
+[0m23:54:59.706419 [debug] [Thread-6 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82
+[0m23:54:59.707093 [debug] [Thread-7 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6
+[0m23:54:59.707805 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.hoteldb.guest, now test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d)
+[0m23:54:59.708495 [debug] [Thread-8 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1
+[0m23:54:59.709178 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.hoteldb.reservation, now test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc)
+[0m23:54:59.709779 [debug] [Thread-9 (]: Began running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c
+[0m23:54:59.710470 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.hoteldb.room, now test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342)
+[0m23:54:59.711052 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_guest_raw_EMAIL.471094d265, now test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a)
+[0m23:54:59.711643 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_ID.32e8b11efe, now test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82)
+[0m23:54:59.712210 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_guest_raw_GUEST_NAME.0f36314667, now test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6)
+[0m23:54:59.712737 [debug] [Thread-2 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d
+[0m23:54:59.713332 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHANNEL.785884191d, now test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1)
+[0m23:54:59.713870 [debug] [Thread-3 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc
+[0m23:54:59.714791 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_IN_DATE.4d38e772c7, now test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c)
+[0m23:54:59.715359 [debug] [Thread-4 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342
+[0m23:54:59.715889 [debug] [Thread-5 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a
+[0m23:54:59.716396 [debug] [Thread-6 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82
+[0m23:54:59.716919 [debug] [Thread-7 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6
+[0m23:54:59.722808 [debug] [Thread-2 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d"
+[0m23:54:59.723419 [debug] [Thread-8 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1
+[0m23:54:59.729363 [debug] [Thread-3 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc"
+[0m23:54:59.730007 [debug] [Thread-9 (]: Began compiling node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c
+[0m23:54:59.822626 [debug] [Thread-4 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342"
+[0m23:54:59.828523 [debug] [Thread-5 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a"
+[0m23:54:59.834152 [debug] [Thread-6 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82"
+[0m23:54:59.839827 [debug] [Thread-7 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6"
+[0m23:54:59.845850 [debug] [Thread-8 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1"
+[0m23:54:59.846444 [debug] [Thread-2 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d
+[0m23:54:59.854727 [debug] [Thread-9 (]: Writing injected SQL for node "test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c"
+[0m23:54:59.855453 [debug] [Thread-3 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc
+[0m23:54:59.856444 [debug] [Thread-4 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342
+[0m23:54:59.857308 [debug] [Thread-5 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a
+[0m23:54:59.858162 [debug] [Thread-6 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82
+[0m23:54:59.859072 [debug] [Thread-7 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6
+[0m23:54:59.859980 [debug] [Thread-2 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d
+[0m23:54:59.860545 [debug] [Thread-8 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1
+[0m23:54:59.861502 [debug] [Thread-3 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc
+[0m23:54:59.862089 [debug] [Thread-9 (]: Began executing node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c
+[0m23:54:59.862848 [debug] [Thread-4 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342
+[0m23:54:59.863601 [debug] [Thread-5 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a
+[0m23:54:59.864355 [debug] [Thread-6 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82
+[0m23:54:59.865110 [debug] [Thread-7 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6
+[0m23:54:59.865719 [debug] [Thread-2 (]: Began running node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88
+[0m23:54:59.866570 [debug] [Thread-8 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1
+[0m23:54:59.867151 [debug] [Thread-3 (]: Began running node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962
+[0m23:54:59.867964 [debug] [Thread-9 (]: Finished running node test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c
+[0m23:54:59.868645 [debug] [Thread-4 (]: Began running node model.hoteldb.dim_guest
+[0m23:54:59.869290 [debug] [Thread-5 (]: Began running node test.hoteldb.not_null_guest_GUEST_ID.e2504187dd
+[0m23:54:59.869900 [debug] [Thread-6 (]: Began running node test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7
+[0m23:54:59.870503 [debug] [Thread-7 (]: Began running node test.hoteldb.unique_guest_GUEST_ID.97be4aeefc
+[0m23:54:59.871155 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_CHECK_OUT_DATE.ab5d8fdb7d, now test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88)
+[0m23:54:59.871739 [debug] [Thread-8 (]: Began running node model.hoteldb.dim_reservation
+[0m23:54:59.872366 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_GUEST_ID.c3924f28cc, now test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962)
+[0m23:54:59.872938 [debug] [Thread-9 (]: Began running node test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e
+[0m23:54:59.873556 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_LOAD_DT.f2e485c342, now model.hoteldb.dim_guest)
+[0m23:54:59.874105 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_reservation_raw_STATUS.83f270439a, now test.hoteldb.not_null_guest_GUEST_ID.e2504187dd)
+[0m23:54:59.874666 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_room_raw_E_MAIL.83f4dc7a82, now test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7)
+[0m23:54:59.875225 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_room_raw_HOTEL_NAME.51c2cb11d6, now test.hoteldb.unique_guest_GUEST_ID.97be4aeefc)
+[0m23:54:59.875728 [debug] [Thread-2 (]: Began compiling node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88
+[0m23:54:59.876292 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_ID.771de7d4c1, now model.hoteldb.dim_reservation)
+[0m23:54:59.876822 [debug] [Thread-3 (]: Began compiling node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962
+[0m23:54:59.877374 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_not_null_hoteldb_raw_room_raw_ROOM_TYPE.4e8416844c, now test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e)
+[0m23:54:59.877861 [debug] [Thread-4 (]: Began compiling node model.hoteldb.dim_guest
+[0m23:54:59.878421 [debug] [Thread-5 (]: Began compiling node test.hoteldb.not_null_guest_GUEST_ID.e2504187dd
+[0m23:54:59.878902 [debug] [Thread-6 (]: Began compiling node test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7
+[0m23:54:59.879395 [debug] [Thread-7 (]: Began compiling node test.hoteldb.unique_guest_GUEST_ID.97be4aeefc
+[0m23:54:59.888039 [debug] [Thread-2 (]: Writing injected SQL for node "test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88"
+[0m23:54:59.888770 [debug] [Thread-8 (]: Began compiling node model.hoteldb.dim_reservation
+[0m23:54:59.894452 [debug] [Thread-3 (]: Writing injected SQL for node "test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962"
+[0m23:54:59.895098 [debug] [Thread-9 (]: Began compiling node test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e
+[0m23:54:59.899718 [debug] [Thread-4 (]: Writing injected SQL for node "model.hoteldb.dim_guest"
+[0m23:54:59.907698 [debug] [Thread-5 (]: Writing injected SQL for node "test.hoteldb.not_null_guest_GUEST_ID.e2504187dd"
+[0m23:54:59.913603 [debug] [Thread-6 (]: Writing injected SQL for node "test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7"
+[0m23:54:59.919647 [debug] [Thread-7 (]: Writing injected SQL for node "test.hoteldb.unique_guest_GUEST_ID.97be4aeefc"
+[0m23:54:59.924432 [debug] [Thread-8 (]: Writing injected SQL for node "model.hoteldb.dim_reservation"
+[0m23:54:59.925188 [debug] [Thread-2 (]: Began executing node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88
+[0m23:54:59.931307 [debug] [Thread-9 (]: Writing injected SQL for node "test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e"
+[0m23:54:59.931928 [debug] [Thread-3 (]: Began executing node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962
+[0m23:54:59.932918 [debug] [Thread-4 (]: Began executing node model.hoteldb.dim_guest
+[0m23:54:59.933816 [debug] [Thread-5 (]: Began executing node test.hoteldb.not_null_guest_GUEST_ID.e2504187dd
+[0m23:54:59.934571 [debug] [Thread-6 (]: Began executing node test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7
+[0m23:54:59.935499 [debug] [Thread-7 (]: Began executing node test.hoteldb.unique_guest_GUEST_ID.97be4aeefc
+[0m23:54:59.936466 [debug] [Thread-2 (]: Finished running node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88
+[0m23:54:59.937043 [debug] [Thread-8 (]: Began executing node model.hoteldb.dim_reservation
+[0m23:54:59.938253 [debug] [Thread-3 (]: Finished running node test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962
+[0m23:54:59.938827 [debug] [Thread-9 (]: Began executing node test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e
+[0m23:54:59.939740 [debug] [Thread-4 (]: Finished running node model.hoteldb.dim_guest
+[0m23:54:59.940582 [debug] [Thread-5 (]: Finished running node test.hoteldb.not_null_guest_GUEST_ID.e2504187dd
+[0m23:54:59.941425 [debug] [Thread-6 (]: Finished running node test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7
+[0m23:54:59.942230 [debug] [Thread-7 (]: Finished running node test.hoteldb.unique_guest_GUEST_ID.97be4aeefc
+[0m23:54:59.942856 [debug] [Thread-2 (]: Began running node test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203
+[0m23:54:59.943706 [debug] [Thread-8 (]: Finished running node model.hoteldb.dim_reservation
+[0m23:54:59.944319 [debug] [Thread-3 (]: Began running node test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2
+[0m23:54:59.945201 [debug] [Thread-9 (]: Finished running node test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e
+[0m23:54:59.945829 [debug] [Thread-4 (]: Began running node model.hoteldb.dim_room
+[0m23:54:59.946713 [debug] [Thread-5 (]: Began running node test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551
+[0m23:54:59.947360 [debug] [Thread-6 (]: Began running node test.hoteldb.not_null_room_ROOM_ID.e10d1c0965
+[0m23:54:59.948019 [debug] [Thread-7 (]: Began running node test.hoteldb.unique_room_ROOM_ID.9271a2218b
+[0m23:54:59.948852 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_unique_hoteldb_raw_reservation_raw_GUEST_ID.4f6e611a88, now test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203)
+[0m23:54:59.949462 [debug] [Thread-8 (]: Began running node test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd
+[0m23:54:59.950313 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.hoteldb.source_unique_hoteldb_raw_reservation_raw_ROOM_ID.9355bf3962, now test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2)
+[0m23:54:59.950947 [debug] [Thread-9 (]: Began running node test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07
+[0m23:54:59.951615 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.hoteldb.dim_guest, now model.hoteldb.dim_room)
+[0m23:54:59.952179 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_guest_GUEST_ID.e2504187dd, now test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551)
+[0m23:54:59.952764 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_guest_GUEST_NAME.c0181bedb7, now test.hoteldb.not_null_room_ROOM_ID.e10d1c0965)
+[0m23:54:59.953359 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.hoteldb.unique_guest_GUEST_ID.97be4aeefc, now test.hoteldb.unique_room_ROOM_ID.9271a2218b)
+[0m23:54:59.953947 [debug] [Thread-2 (]: Began compiling node test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203
+[0m23:54:59.954574 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly model.hoteldb.dim_reservation, now test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd)
+[0m23:54:59.955093 [debug] [Thread-3 (]: Began compiling node test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2
+[0m23:54:59.955671 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_reservation_GUEST_ID.11b0cf831e, now test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07)
+[0m23:54:59.956215 [debug] [Thread-4 (]: Began compiling node model.hoteldb.dim_room
+[0m23:54:59.956729 [debug] [Thread-5 (]: Began compiling node test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551
+[0m23:54:59.957255 [debug] [Thread-6 (]: Began compiling node test.hoteldb.not_null_room_ROOM_ID.e10d1c0965
+[0m23:54:59.957768 [debug] [Thread-7 (]: Began compiling node test.hoteldb.unique_room_ROOM_ID.9271a2218b
+[0m23:54:59.966071 [debug] [Thread-2 (]: Writing injected SQL for node "test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203"
+[0m23:54:59.966710 [debug] [Thread-8 (]: Began compiling node test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd
+[0m23:54:59.972565 [debug] [Thread-3 (]: Writing injected SQL for node "test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2"
+[0m23:54:59.973217 [debug] [Thread-9 (]: Began compiling node test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07
+[0m23:54:59.977479 [debug] [Thread-4 (]: Writing injected SQL for node "model.hoteldb.dim_room"
+[0m23:54:59.983320 [debug] [Thread-5 (]: Writing injected SQL for node "test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551"
+[0m23:54:59.989021 [debug] [Thread-6 (]: Writing injected SQL for node "test.hoteldb.not_null_room_ROOM_ID.e10d1c0965"
+[0m23:54:59.997112 [debug] [Thread-7 (]: Writing injected SQL for node "test.hoteldb.unique_room_ROOM_ID.9271a2218b"
+[0m23:55:00.003208 [debug] [Thread-8 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd"
+[0m23:55:00.004033 [debug] [Thread-2 (]: Began executing node test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203
+[0m23:55:00.009978 [debug] [Thread-9 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07"
+[0m23:55:00.010549 [debug] [Thread-3 (]: Began executing node test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2
+[0m23:55:00.011508 [debug] [Thread-4 (]: Began executing node model.hoteldb.dim_room
+[0m23:55:00.012329 [debug] [Thread-5 (]: Began executing node test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551
+[0m23:55:00.013185 [debug] [Thread-6 (]: Began executing node test.hoteldb.not_null_room_ROOM_ID.e10d1c0965
+[0m23:55:00.013994 [debug] [Thread-7 (]: Began executing node test.hoteldb.unique_room_ROOM_ID.9271a2218b
+[0m23:55:00.014998 [debug] [Thread-2 (]: Finished running node test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203
+[0m23:55:00.015563 [debug] [Thread-8 (]: Began executing node test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd
+[0m23:55:00.016625 [debug] [Thread-3 (]: Finished running node test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2
+[0m23:55:00.017158 [debug] [Thread-9 (]: Began executing node test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07
+[0m23:55:00.017953 [debug] [Thread-4 (]: Finished running node model.hoteldb.dim_room
+[0m23:55:00.018842 [debug] [Thread-5 (]: Finished running node test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551
+[0m23:55:00.019627 [debug] [Thread-6 (]: Finished running node test.hoteldb.not_null_room_ROOM_ID.e10d1c0965
+[0m23:55:00.020438 [debug] [Thread-7 (]: Finished running node test.hoteldb.unique_room_ROOM_ID.9271a2218b
+[0m23:55:00.021122 [debug] [Thread-2 (]: Began running node test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365
+[0m23:55:00.022071 [debug] [Thread-8 (]: Finished running node test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd
+[0m23:55:00.022702 [debug] [Thread-3 (]: Began running node test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43
+[0m23:55:00.023873 [debug] [Thread-9 (]: Finished running node test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07
+[0m23:55:00.024534 [debug] [Thread-4 (]: Began running node test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404
+[0m23:55:00.025371 [debug] [Thread-5 (]: Began running node test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420
+[0m23:55:00.026043 [debug] [Thread-6 (]: Began running node test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4
+[0m23:55:00.026706 [debug] [Thread-7 (]: Began running node test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4
+[0m23:55:00.027427 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_reservation_RESERVATION_ID.140cafc203, now test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365)
+[0m23:55:00.028039 [debug] [Thread-8 (]: Began running node test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02
+[0m23:55:00.028814 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.hoteldb.unique_reservation_RESERVATION_ID.108d57f7c2, now test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43)
+[0m23:55:00.029594 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.hoteldb.dim_room, now test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404)
+[0m23:55:00.030205 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_room_HOTEL_NAME.3f56e7c551, now test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420)
+[0m23:55:00.030784 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_room_ROOM_ID.e10d1c0965, now test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4)
+[0m23:55:00.031367 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.hoteldb.unique_room_ROOM_ID.9271a2218b, now test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4)
+[0m23:55:00.031888 [debug] [Thread-2 (]: Began compiling node test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365
+[0m23:55:00.032489 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.hoteldb.not_null_dim_guest_GUEST_ID.86cb8a2dfd, now test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02)
+[0m23:55:00.033036 [debug] [Thread-3 (]: Began compiling node test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43
+[0m23:55:00.033564 [debug] [Thread-4 (]: Began compiling node test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404
+[0m23:55:00.034072 [debug] [Thread-5 (]: Began compiling node test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420
+[0m23:55:00.034591 [debug] [Thread-6 (]: Began compiling node test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4
+[0m23:55:00.035080 [debug] [Thread-7 (]: Began compiling node test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4
+[0m23:55:00.040925 [debug] [Thread-2 (]: Writing injected SQL for node "test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365"
+[0m23:55:00.041534 [debug] [Thread-8 (]: Began compiling node test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02
+[0m23:55:00.047403 [debug] [Thread-3 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43"
+[0m23:55:00.055459 [debug] [Thread-4 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404"
+[0m23:55:00.061218 [debug] [Thread-5 (]: Writing injected SQL for node "test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420"
+[0m23:55:00.066900 [debug] [Thread-6 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4"
+[0m23:55:00.072680 [debug] [Thread-7 (]: Writing injected SQL for node "test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4"
+[0m23:55:00.079013 [debug] [Thread-8 (]: Writing injected SQL for node "test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02"
+[0m23:55:00.079733 [debug] [Thread-2 (]: Began executing node test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365
+[0m23:55:00.080729 [debug] [Thread-3 (]: Began executing node test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43
+[0m23:55:00.081564 [debug] [Thread-4 (]: Began executing node test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404
+[0m23:55:00.082453 [debug] [Thread-5 (]: Began executing node test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420
+[0m23:55:00.083128 [debug] [Thread-6 (]: Began executing node test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4
+[0m23:55:00.083819 [debug] [Thread-7 (]: Began executing node test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4
+[0m23:55:00.084838 [debug] [Thread-2 (]: Finished running node test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365
+[0m23:55:00.085364 [debug] [Thread-8 (]: Began executing node test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02
+[0m23:55:00.086208 [debug] [Thread-3 (]: Finished running node test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43
+[0m23:55:00.087025 [debug] [Thread-4 (]: Finished running node test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404
+[0m23:55:00.087818 [debug] [Thread-5 (]: Finished running node test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420
+[0m23:55:00.088674 [debug] [Thread-6 (]: Finished running node test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4
+[0m23:55:00.089451 [debug] [Thread-7 (]: Finished running node test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4
+[0m23:55:00.090409 [debug] [Thread-8 (]: Finished running node test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02
+[0m23:55:00.094555 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m23:55:00.095042 [debug] [Dummy-1   ]: Connection 'test.hoteldb.unique_dim_guest_GUEST_ID.3ac47f5365' was properly closed.
+[0m23:55:00.095447 [debug] [Dummy-1   ]: Connection 'test.hoteldb.not_null_dim_reservation_GUEST_ID.e096536d43' was properly closed.
+[0m23:55:00.095864 [debug] [Dummy-1   ]: Connection 'test.hoteldb.not_null_dim_reservation_RESERVATION_ID.af7b364404' was properly closed.
+[0m23:55:00.096274 [debug] [Dummy-1   ]: Connection 'test.hoteldb.unique_dim_reservation_RESERVATION_ID.ec8a887420' was properly closed.
+[0m23:55:00.096671 [debug] [Dummy-1   ]: Connection 'test.hoteldb.not_null_dim_room_HOTEL_NAME.4d0e37dcf4' was properly closed.
+[0m23:55:00.097092 [debug] [Dummy-1   ]: Connection 'test.hoteldb.not_null_dim_room_ROOM_ID.e02b4c92b4' was properly closed.
+[0m23:55:00.097496 [debug] [Dummy-1   ]: Connection 'test.hoteldb.unique_dim_room_ROOM_ID.a5e3941c02' was properly closed.
+[0m23:55:00.097886 [debug] [Dummy-1   ]: Connection 'test.hoteldb.not_null_dim_guest_GUEST_NAME.f622205d07' was properly closed.
+[0m23:55:00.102781 [debug] [Dummy-1   ]: Command end result
+[0m23:55:00.134636 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m23:55:00.136829 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m23:55:00.145176 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m23:55:00.147053 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 3.661698, "process_in_blocks": "0", "process_kernel_time": 0.81, "process_mem_max_rss": "528832", "process_out_blocks": "0", "process_user_time": 5.14}
+[0m23:55:00.147742 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 23:55:00.147465 after 3.66 seconds
+[0m23:55:00.148377 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 00:11:09.077899 | 12dd0e43-5fe4-45cc-8109-9f82f73b92f4 ==============================
+[0m00:11:09.077899 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m00:11:09.078809 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m00:11:09.358331 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m00:11:09.917987 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m00:11:10.180719 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:11:10.181279 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:11:10.188222 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.hoteldb.bronze
+[0m00:11:10.234691 [info ] [Dummy-1   ]: Performance info: /tmp/dbt/target/perf_info.json
+[0m00:11:10.328051 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:11:10.330074 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:11:10.331673 [debug] [Dummy-1   ]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 1.3269994, "process_in_blocks": "0", "process_kernel_time": 0.7, "process_mem_max_rss": "401176", "process_out_blocks": "0", "process_user_time": 3.77}
+[0m00:11:10.332298 [debug] [Dummy-1   ]: Command `cli parse` succeeded at 00:11:10.332045 after 1.33 seconds
+[0m00:11:10.332961 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 00:18:44.855284 | 9d85130a-03e1-4ccf-9c2a-fc34e59e99b8 ==============================
+[0m00:18:44.855284 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m00:18:44.856160 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m00:18:45.135704 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m00:18:45.713957 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m00:18:45.917509 [info ] [Dummy-1   ]: Unable to do partial parsing because a project config has changed
+[0m00:18:47.372660 [info ] [Dummy-1   ]: Performance info: /tmp/dbt/target/perf_info.json
+[0m00:18:47.550664 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:18:47.552877 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:18:47.554593 [debug] [Dummy-1   ]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 2.7723827, "process_in_blocks": "0", "process_kernel_time": 0.77, "process_mem_max_rss": "460932", "process_out_blocks": "0", "process_user_time": 4.99}
+[0m00:18:47.555276 [debug] [Dummy-1   ]: Command `cli parse` succeeded at 00:18:47.555000 after 2.77 seconds
+[0m00:18:47.555880 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 00:19:58.286226 | 1e30786a-a032-4ae6-99ed-fd346e5df24f ==============================
+[0m00:19:58.286226 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m00:19:58.287148 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m00:19:58.570069 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m00:19:59.128632 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m00:19:59.390153 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:19:59.390718 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:19:59.532897 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:19:59.534946 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:19:59.578856 [info ] [Dummy-1   ]: Found 6 models, 33 data tests, 3 sources, 476 macros
+[0m00:19:59.581525 [info ] [Dummy-1   ]: 
+[0m00:19:59.582022 [info ] [Dummy-1   ]: Concurrency: 8 threads (target='dev')
+[0m00:19:59.582502 [info ] [Dummy-1   ]: 
+[0m00:19:59.583245 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m00:19:59.588898 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_dev'
+[0m00:19:59.590027 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_dev'
+[0m00:19:59.699112 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev"
+[0m00:19:59.699823 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev"
+[0m00:19:59.700334 [debug] [ThreadPool]: On list_hoteldb_dev: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev"} */
+show terse schemas in database hoteldb_dev
+    limit 10000
+[0m00:19:59.700819 [debug] [ThreadPool]: On list_hoteldb_dev: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev"} */
+show terse schemas in database hoteldb_dev
+    limit 10000
+[0m00:19:59.701305 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:19:59.701741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:00.053333 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.352 seconds
+[0m00:20:00.536958 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.835 seconds
+[0m00:20:00.541153 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_dev_silver'
+[0m00:20:00.542095 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hoteldb_dev, now list_hoteldb_dev_gold)
+[0m00:20:00.555470 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m00:20:00.559020 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m00:20:00.559542 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:20:00.560020 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:20:00.560488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:00.560918 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:00.893278 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.333 seconds
+[0m00:20:00.894025 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.333 seconds
+[0m00:20:00.898498 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m00:20:00.900183 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m00:20:00.900677 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+show objects in hoteldb_dev.silver
+    limit 10000
+    
+;
+[0m00:20:00.901125 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+show objects in hoteldb_dev.gold
+    limit 10000
+    
+;
+[0m00:20:00.990047 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.088 seconds
+[0m00:20:00.990865 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.089 seconds
+[0m00:20:00.992859 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_silver"
+[0m00:20:00.994584 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_dev_gold"
+[0m00:20:00.995086 [debug] [ThreadPool]: On list_hoteldb_dev_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_silver"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:20:00.995543 [debug] [ThreadPool]: On list_hoteldb_dev_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "connection_name": "list_hoteldb_dev_gold"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:20:01.036974 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.041 seconds
+[0m00:20:01.040514 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.044 seconds
+[0m00:20:01.049958 [debug] [Thread-2 (]: Began running node model.hoteldb.guest
+[0m00:20:01.050559 [debug] [Thread-3 (]: Began running node model.hoteldb.reservation
+[0m00:20:01.051126 [debug] [Thread-4 (]: Began running node model.hoteldb.room
+[0m00:20:01.051843 [info ] [Thread-2 (]: 1 of 6 START sql table model silver.guest ...................................... [RUN]
+[0m00:20:01.052519 [info ] [Thread-3 (]: 2 of 6 START sql table model silver.reservation ................................ [RUN]
+[0m00:20:01.053175 [info ] [Thread-4 (]: 3 of 6 START sql table model silver.room ....................................... [RUN]
+[0m00:20:01.053810 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_hoteldb_dev_silver, now model.hoteldb.guest)
+[0m00:20:01.054369 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_hoteldb_dev_gold, now model.hoteldb.reservation)
+[0m00:20:01.054939 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_hoteldb_dev, now model.hoteldb.room)
+[0m00:20:01.055503 [debug] [Thread-2 (]: Began compiling node model.hoteldb.guest
+[0m00:20:01.056344 [debug] [Thread-3 (]: Began compiling node model.hoteldb.reservation
+[0m00:20:01.056931 [debug] [Thread-4 (]: Began compiling node model.hoteldb.room
+[0m00:20:01.065495 [debug] [Thread-2 (]: Writing injected SQL for node "model.hoteldb.guest"
+[0m00:20:01.069728 [debug] [Thread-3 (]: Writing injected SQL for node "model.hoteldb.reservation"
+[0m00:20:01.075202 [debug] [Thread-4 (]: Writing injected SQL for node "model.hoteldb.room"
+[0m00:20:01.076341 [debug] [Thread-2 (]: Began executing node model.hoteldb.guest
+[0m00:20:01.076884 [debug] [Thread-3 (]: Began executing node model.hoteldb.reservation
+[0m00:20:01.092474 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:01.093072 [debug] [Thread-4 (]: Began executing node model.hoteldb.room
+[0m00:20:01.096497 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:01.097034 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+show parameters like 'query_tag' in session
+[0m00:20:01.100610 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:01.101166 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+show parameters like 'query_tag' in session
+[0m00:20:01.101689 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:20:01.102203 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+show parameters like 'query_tag' in session
+[0m00:20:01.102700 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:20:01.103326 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:20:01.427334 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.324 seconds
+[0m00:20:01.428301 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.326 seconds
+[0m00:20:01.429126 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.326 seconds
+[0m00:20:01.430800 [debug] [Thread-4 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:01.432328 [debug] [Thread-2 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:01.433779 [debug] [Thread-3 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:01.434715 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:01.435581 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:01.436436 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:01.437003 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:01.437549 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:01.438229 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:01.480239 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.041 seconds
+[0m00:20:01.481026 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.042 seconds
+[0m00:20:01.492486 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.053 seconds
+[0m00:20:01.503140 [debug] [Thread-2 (]: Writing runtime sql for node "model.hoteldb.guest"
+[0m00:20:01.505164 [debug] [Thread-3 (]: Writing runtime sql for node "model.hoteldb.reservation"
+[0m00:20:01.507064 [debug] [Thread-4 (]: Writing runtime sql for node "model.hoteldb.room"
+[0m00:20:01.508868 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:01.510531 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:01.511175 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+create or replace transient table hoteldb_dev.silver.guest
+        copy grants as
+        (-- Silver layer: guest 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    GUEST_ID,
+    TRIM(GUEST_NAME) AS GUEST_NAME,
+    PHONE,
+    LOWER(EMAIL) AS EMAIL,
+    UPPER(COUNTRY) AS COUNTRY_CODE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.bronze.guest_raw
+        );
+[0m00:20:01.512294 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:01.512879 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+create or replace transient table hoteldb_dev.silver.reservation
+        copy grants as
+        (-- Silver layer: reservation 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    RESERVATION_ID,
+    GUEST_ID,
+    ROOM_ID,
+    TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')) AS CHECK_IN_DATE,
+    TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-')) AS CHECK_OUT_DATE,
+    DATEDIFF(
+        DAY,
+        TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')),
+        TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-'))
+    ) AS NIGHTS_STAYED,
+    TO_NUMBER(REPLACE(TOTAL_AMOUNT, ',', '')) AS TOTAL_AMOUNT,
+    UPPER(CHANNEL) AS CHANNEL,
+    UPPER(STATUS) AS STATUS,
+    IFF(UPPER(STATUS) = 'CANCELLED', TRUE, FALSE) AS IS_CANCELLED,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.bronze.reservation_raw
+        );
+[0m00:20:01.513828 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+create or replace transient table hoteldb_dev.silver.room
+        copy grants as
+        (-- Silver layer: room 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    ROOM_ID,
+    HOTEL_NAME,
+    UPPER(ROOM_TYPE) AS ROOM_TYPE,
+    ROOM_NO,
+    TO_NUMBER(REPLACE(BASE_PRICE, ',', '')) AS BASE_PRICE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.bronze.room_raw
+        );
+[0m00:20:02.260999 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.747 seconds
+[0m00:20:02.282583 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:02.283227 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+comment on table hoteldb_dev.silver.guest IS $$mart model guest$$;
+[0m00:20:02.295292 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.781 seconds
+[0m00:20:02.297381 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:02.297938 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+comment on table hoteldb_dev.silver.reservation IS $$mart model guest$$;
+[0m00:20:02.309178 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.794 seconds
+[0m00:20:02.311143 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:02.311699 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+comment on table hoteldb_dev.silver.room IS $$mart model guest$$;
+[0m00:20:02.347288 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.063 seconds
+[0m00:20:02.354822 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.056 seconds
+[0m00:20:02.366320 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.054 seconds
+[0m00:20:02.370163 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:02.375070 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:02.380013 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:02.380918 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+describe table hoteldb_dev.silver.guest
+[0m00:20:02.381729 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+describe table hoteldb_dev.silver.reservation
+[0m00:20:02.382543 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+describe table hoteldb_dev.silver.room
+[0m00:20:02.418679 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.035 seconds
+[0m00:20:02.419962 [debug] [Thread-3 (]: SQL status: SUCCESS 11 in 0.036 seconds
+[0m00:20:02.421158 [debug] [Thread-4 (]: SQL status: SUCCESS 6 in 0.037 seconds
+[0m00:20:02.443778 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:02.472219 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:02.488816 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:02.489453 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+alter  table hoteldb_dev.silver.guest alter
+    
+        "GUEST_ID" COMMENT $$Primary key for guest$$,
+    
+        "GUEST_NAME" COMMENT $$guest name$$,
+    
+        "PHONE" COMMENT $$phon$$,
+    
+        "EMAIL" COMMENT $$email$$,
+    
+        "COUNTRY_CODE" COMMENT $$country code$$,
+    
+        "CREATED_AT" COMMENT $$create by timezone$$;
+[0m00:20:02.490033 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+alter  table hoteldb_dev.silver.reservation alter
+    
+        "RESERVATION_ID" COMMENT $$Primary key for RESERVATION_ID$$,
+    
+        "GUEST_ID" COMMENT $$GUEST_ID name$$,
+    
+        "ROOM_ID" COMMENT $$ROOM_ID$$,
+    
+        "CHECK_IN_DATE" COMMENT $$CHECK_IN_DATE$$,
+    
+        "CHECK_OUT_DATE" COMMENT $$CHECK_OUT_DATE code$$,
+    
+        "NIGHTS_STAYED" COMMENT $$$$,
+    
+        "TOTAL_AMOUNT" COMMENT $$TOTAL_AMOUNT$$,
+    
+        "CHANNEL" COMMENT $$CHANNEL$$,
+    
+        "STATUS" COMMENT $$STATUS$$,
+    
+        "IS_CANCELLED" COMMENT $$$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:02.490612 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+alter  table hoteldb_dev.silver.room alter
+    
+        "ROOM_ID" COMMENT $$Primary key for ROOM_ID$$,
+    
+        "HOTEL_NAME" COMMENT $$HOTEL_NAME$$,
+    
+        "ROOM_TYPE" COMMENT $$ROOM_TYPE$$,
+    
+        "ROOM_NO" COMMENT $$ROOM_NO$$,
+    
+        "BASE_PRICE" COMMENT $$BASE_PRICE code$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:02.567181 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.075 seconds
+[0m00:20:02.567962 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.077 seconds
+[0m00:20:02.573824 [debug] [Thread-4 (]: No original query_tag, unsetting parameter.
+[0m00:20:02.575388 [debug] [Thread-2 (]: No original query_tag, unsetting parameter.
+[0m00:20:02.576493 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:02.577258 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:02.577773 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.room"} */
+alter session unset query_tag
+[0m00:20:02.578391 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.guest"} */
+alter session unset query_tag
+[0m00:20:02.584152 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m00:20:02.585697 [debug] [Thread-3 (]: No original query_tag, unsetting parameter.
+[0m00:20:02.586463 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:02.586990 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.reservation"} */
+alter session unset query_tag
+[0m00:20:02.617994 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m00:20:02.623101 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.044 seconds
+[0m00:20:02.626665 [info ] [Thread-2 (]: 1 of 6 OK created sql table model silver.guest ................................. [[32mSUCCESS 1[0m in 1.57s]
+[0m00:20:02.627404 [info ] [Thread-4 (]: 3 of 6 OK created sql table model silver.room .................................. [[32mSUCCESS 1[0m in 1.57s]
+[0m00:20:02.628242 [debug] [Thread-2 (]: Finished running node model.hoteldb.guest
+[0m00:20:02.628921 [debug] [Thread-4 (]: Finished running node model.hoteldb.room
+[0m00:20:02.630108 [debug] [Thread-6 (]: Began running node model.hoteldb.dim_guest
+[0m00:20:02.631149 [debug] [Thread-8 (]: Began running node model.hoteldb.dim_room
+[0m00:20:02.631881 [info ] [Thread-6 (]: 4 of 6 START sql table model gold.dim_guest .................................... [RUN]
+[0m00:20:02.632568 [info ] [Thread-8 (]: 5 of 6 START sql table model gold.dim_room ..................................... [RUN]
+[0m00:20:02.633292 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.hoteldb.dim_guest'
+[0m00:20:02.633907 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.hoteldb.dim_room'
+[0m00:20:02.634404 [debug] [Thread-6 (]: Began compiling node model.hoteldb.dim_guest
+[0m00:20:02.635130 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.048 seconds
+[0m00:20:02.635682 [debug] [Thread-8 (]: Began compiling node model.hoteldb.dim_room
+[0m00:20:02.640275 [debug] [Thread-6 (]: Writing injected SQL for node "model.hoteldb.dim_guest"
+[0m00:20:02.642566 [info ] [Thread-3 (]: 2 of 6 OK created sql table model silver.reservation ........................... [[32mSUCCESS 1[0m in 1.59s]
+[0m00:20:02.646963 [debug] [Thread-8 (]: Writing injected SQL for node "model.hoteldb.dim_room"
+[0m00:20:02.648035 [debug] [Thread-3 (]: Finished running node model.hoteldb.reservation
+[0m00:20:02.648629 [debug] [Thread-6 (]: Began executing node model.hoteldb.dim_guest
+[0m00:20:02.649681 [debug] [Thread-8 (]: Began executing node model.hoteldb.dim_room
+[0m00:20:02.650485 [debug] [Thread-5 (]: Began running node model.hoteldb.dim_reservation
+[0m00:20:02.654297 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:02.658030 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:02.658819 [info ] [Thread-5 (]: 6 of 6 START sql table model gold.dim_reservation .............................. [RUN]
+[0m00:20:02.659401 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+show parameters like 'query_tag' in session
+[0m00:20:02.659927 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+show parameters like 'query_tag' in session
+[0m00:20:02.660601 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.hoteldb.dim_reservation'
+[0m00:20:02.661117 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:20:02.661595 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:20:02.662112 [debug] [Thread-5 (]: Began compiling node model.hoteldb.dim_reservation
+[0m00:20:02.667945 [debug] [Thread-5 (]: Writing injected SQL for node "model.hoteldb.dim_reservation"
+[0m00:20:02.668749 [debug] [Thread-5 (]: Began executing node model.hoteldb.dim_reservation
+[0m00:20:02.672273 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:02.672915 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+show parameters like 'query_tag' in session
+[0m00:20:02.673385 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:20:03.247837 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.587 seconds
+[0m00:20:03.249608 [debug] [Thread-6 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:03.250473 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:03.250981 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:03.256215 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.595 seconds
+[0m00:20:03.257694 [debug] [Thread-8 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:03.258595 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:03.259147 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:03.264203 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.591 seconds
+[0m00:20:03.265688 [debug] [Thread-5 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:03.266455 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:03.266954 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:03.292379 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.041 seconds
+[0m00:20:03.294495 [debug] [Thread-6 (]: Writing runtime sql for node "model.hoteldb.dim_guest"
+[0m00:20:03.295688 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:03.296266 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+create or replace transient table hoteldb_dev.gold.dim_guest
+        copy grants as
+        (-- Silver layer: guest 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    GUEST_ID,
+    TRIM(GUEST_NAME) AS GUEST_NAME,
+    PHONE,
+    LOWER(EMAIL) AS EMAIL,
+    COUNTRY_CODE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.silver.guest
+        );
+[0m00:20:03.298081 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.038 seconds
+[0m00:20:03.300149 [debug] [Thread-8 (]: Writing runtime sql for node "model.hoteldb.dim_room"
+[0m00:20:03.301282 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:03.301830 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+create or replace transient table hoteldb_dev.gold.dim_room
+        copy grants as
+        (-- Silver layer: room 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    ROOM_ID,
+    HOTEL_NAME,
+    UPPER(ROOM_TYPE) AS ROOM_TYPE,
+    ROOM_NO,
+    TO_NUMBER(REPLACE(BASE_PRICE, ',', '')) AS BASE_PRICE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.silver.room
+        );
+[0m00:20:03.306352 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m00:20:03.308382 [debug] [Thread-5 (]: Writing runtime sql for node "model.hoteldb.dim_reservation"
+[0m00:20:03.310236 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:03.310847 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+create or replace transient table hoteldb_dev.gold.dim_reservation
+        copy grants as
+        (-- Silver layer: reservation 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    RESERVATION_ID,
+    GUEST_ID,
+    ROOM_ID,
+    TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')) AS CHECK_IN_DATE,
+    TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-')) AS CHECK_OUT_DATE,
+    DATEDIFF(
+        DAY,
+        TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')),
+        TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-'))
+    ) AS NIGHTS_STAYED,
+    TO_NUMBER(REPLACE(TOTAL_AMOUNT, ',', '')) AS TOTAL_AMOUNT,
+    UPPER(CHANNEL) AS CHANNEL,
+    UPPER(STATUS) AS STATUS,
+    IFF(UPPER(STATUS) = 'CANCELLED', TRUE, FALSE) AS IS_CANCELLED,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_dev.silver.reservation
+        );
+[0m00:20:03.830481 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.519 seconds
+[0m00:20:03.832482 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:03.833012 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+comment on table hoteldb_dev.gold.dim_reservation IS $$mart model guest$$;
+[0m00:20:03.879607 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.583 seconds
+[0m00:20:03.881618 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:03.882131 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+comment on table hoteldb_dev.gold.dim_guest IS $$mart model guest$$;
+[0m00:20:03.882873 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.580 seconds
+[0m00:20:03.885143 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:03.885634 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+comment on table hoteldb_dev.gold.dim_room IS $$mart model guest$$;
+[0m00:20:03.888922 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.055 seconds
+[0m00:20:03.893570 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:03.894361 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+describe table hoteldb_dev.gold.dim_reservation
+[0m00:20:03.939211 [debug] [Thread-5 (]: SQL status: SUCCESS 11 in 0.044 seconds
+[0m00:20:03.951966 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.068 seconds
+[0m00:20:03.957833 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.072 seconds
+[0m00:20:03.968854 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:03.974765 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:03.979381 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:03.980013 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+alter  table hoteldb_dev.gold.dim_reservation alter
+    
+        "RESERVATION_ID" COMMENT $$Primary key for RESERVATION_ID$$,
+    
+        "GUEST_ID" COMMENT $$GUEST_ID name$$,
+    
+        "ROOM_ID" COMMENT $$ROOM_ID$$,
+    
+        "CHECK_IN_DATE" COMMENT $$CHECK_IN_DATE$$,
+    
+        "CHECK_OUT_DATE" COMMENT $$CHECK_OUT_DATE code$$,
+    
+        "NIGHTS_STAYED" COMMENT $$$$,
+    
+        "TOTAL_AMOUNT" COMMENT $$TOTAL_AMOUNT$$,
+    
+        "CHANNEL" COMMENT $$CHANNEL$$,
+    
+        "STATUS" COMMENT $$STATUS$$,
+    
+        "IS_CANCELLED" COMMENT $$$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:03.980826 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+describe table hoteldb_dev.gold.dim_guest
+[0m00:20:03.981606 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+describe table hoteldb_dev.gold.dim_room
+[0m00:20:04.020136 [debug] [Thread-8 (]: SQL status: SUCCESS 6 in 0.037 seconds
+[0m00:20:04.021263 [debug] [Thread-6 (]: SQL status: SUCCESS 6 in 0.039 seconds
+[0m00:20:04.037574 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:04.053620 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:04.054577 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+alter  table hoteldb_dev.gold.dim_room alter
+    
+        "ROOM_ID" COMMENT $$Primary key for ROOM_ID$$,
+    
+        "HOTEL_NAME" COMMENT $$HOTEL_NAME$$,
+    
+        "ROOM_TYPE" COMMENT $$ROOM_TYPE$$,
+    
+        "ROOM_NO" COMMENT $$ROOM_NO$$,
+    
+        "BASE_PRICE" COMMENT $$BASE_PRICE code$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:04.055162 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+alter  table hoteldb_dev.gold.dim_guest alter
+    
+        "GUEST_ID" COMMENT $$Primary key for guest$$,
+    
+        "GUEST_NAME" COMMENT $$guest name$$,
+    
+        "PHONE" COMMENT $$phon$$,
+    
+        "EMAIL" COMMENT $$email$$,
+    
+        "COUNTRY_CODE" COMMENT $$country code$$,
+    
+        "CREATED_AT" COMMENT $$create by timezone$$;
+[0m00:20:04.060524 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.078 seconds
+[0m00:20:04.062082 [debug] [Thread-5 (]: No original query_tag, unsetting parameter.
+[0m00:20:04.062880 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:04.063418 [debug] [Thread-5 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_reservation"} */
+alter session unset query_tag
+[0m00:20:04.108804 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.045 seconds
+[0m00:20:04.111230 [info ] [Thread-5 (]: 6 of 6 OK created sql table model gold.dim_reservation ......................... [[32mSUCCESS 1[0m in 1.45s]
+[0m00:20:04.111959 [debug] [Thread-5 (]: Finished running node model.hoteldb.dim_reservation
+[0m00:20:04.116920 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.061 seconds
+[0m00:20:04.118431 [debug] [Thread-8 (]: No original query_tag, unsetting parameter.
+[0m00:20:04.119176 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:04.119680 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_room"} */
+alter session unset query_tag
+[0m00:20:04.120999 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.065 seconds
+[0m00:20:04.122348 [debug] [Thread-6 (]: No original query_tag, unsetting parameter.
+[0m00:20:04.123058 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:04.123540 [debug] [Thread-6 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "dev", "node_id": "model.hoteldb.dim_guest"} */
+alter session unset query_tag
+[0m00:20:04.161431 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.041 seconds
+[0m00:20:04.163882 [info ] [Thread-8 (]: 5 of 6 OK created sql table model gold.dim_room ................................ [[32mSUCCESS 1[0m in 1.53s]
+[0m00:20:04.164640 [debug] [Thread-8 (]: Finished running node model.hoteldb.dim_room
+[0m00:20:04.166865 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.043 seconds
+[0m00:20:04.169208 [info ] [Thread-6 (]: 4 of 6 OK created sql table model gold.dim_guest ............................... [[32mSUCCESS 1[0m in 1.54s]
+[0m00:20:04.169911 [debug] [Thread-6 (]: Finished running node model.hoteldb.dim_guest
+[0m00:20:04.173422 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m00:20:04.174068 [debug] [Dummy-1   ]: Connection 'model.hoteldb.reservation' was properly closed.
+[0m00:20:04.174667 [debug] [Dummy-1   ]: Connection 'model.hoteldb.room' was properly closed.
+[0m00:20:04.175138 [debug] [Dummy-1   ]: Connection 'model.hoteldb.guest' was properly closed.
+[0m00:20:04.175566 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_guest' was properly closed.
+[0m00:20:04.175950 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_room' was properly closed.
+[0m00:20:04.176314 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_reservation' was properly closed.
+[0m00:20:04.176875 [info ] [Dummy-1   ]: 
+[0m00:20:04.177354 [info ] [Dummy-1   ]: Finished running 6 table models in 0 hours 0 minutes and 4.59 seconds (4.59s).
+[0m00:20:04.178826 [debug] [Dummy-1   ]: Command end result
+[0m00:20:04.207617 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:20:04.209468 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:20:04.215468 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m00:20:04.215951 [info ] [Dummy-1   ]: 
+[0m00:20:04.216547 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
+[0m00:20:04.217011 [info ] [Dummy-1   ]: 
+[0m00:20:04.217493 [info ] [Dummy-1   ]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m00:20:04.219151 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.0086627, "process_in_blocks": "0", "process_kernel_time": 0.93, "process_mem_max_rss": "482348", "process_out_blocks": "0", "process_user_time": 4.38}
+[0m00:20:04.219798 [debug] [Dummy-1   ]: Command `cli run` succeeded at 00:20:04.219538 after 6.01 seconds
+[0m00:20:04.220313 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 00:20:53.541477 | bb3a3a2b-e83d-4cd4-88ad-ef8123c70c21 ==============================
+[0m00:20:53.541477 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m00:20:53.542305 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m00:20:53.818539 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m00:20:54.385716 [debug] [Dummy-1   ]: checksum: 33df0a7c2b064ca874e22c7c269979c0fa9a17708ce85db6c6be240b76d70fac, vars: {}, profile: , target: prd, version: 1.9.4
+[0m00:20:54.586857 [info ] [Dummy-1   ]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m00:20:54.587457 [debug] [Dummy-1   ]: previous checksum: 33df0a7c2b064ca874e22c7c269979c0fa9a17708ce85db6c6be240b76d70fac, current checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25
+[0m00:20:54.587916 [info ] [Dummy-1   ]: Unable to do partial parsing because profile has changed
+[0m00:20:56.174289 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:20:56.176326 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:20:56.216857 [info ] [Dummy-1   ]: Found 6 models, 33 data tests, 3 sources, 476 macros
+[0m00:20:56.219595 [info ] [Dummy-1   ]: 
+[0m00:20:56.220108 [info ] [Dummy-1   ]: Concurrency: 8 threads (target='prd')
+[0m00:20:56.220542 [info ] [Dummy-1   ]: 
+[0m00:20:56.221227 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m00:20:56.226620 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_prd'
+[0m00:20:56.227753 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_prd'
+[0m00:20:56.309655 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd"
+[0m00:20:56.310332 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd"
+[0m00:20:56.310844 [debug] [ThreadPool]: On list_hoteldb_prd: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd"} */
+show terse schemas in database hoteldb_prd
+    limit 10000
+[0m00:20:56.311326 [debug] [ThreadPool]: On list_hoteldb_prd: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd"} */
+show terse schemas in database hoteldb_prd
+    limit 10000
+[0m00:20:56.311801 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:56.312241 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:56.654730 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.342 seconds
+[0m00:20:56.655535 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.344 seconds
+[0m00:20:56.661097 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_hoteldb_prd_gold'
+[0m00:20:56.662020 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hoteldb_prd, now list_hoteldb_prd_silver)
+[0m00:20:56.674769 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_gold"
+[0m00:20:56.679057 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_silver"
+[0m00:20:56.679644 [debug] [ThreadPool]: On list_hoteldb_prd_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_gold"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:20:56.680134 [debug] [ThreadPool]: On list_hoteldb_prd_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_silver"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:20:56.680580 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:56.681018 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:56.995208 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.314 seconds
+[0m00:20:56.999765 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_gold"
+[0m00:20:57.000296 [debug] [ThreadPool]: On list_hoteldb_prd_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_gold"} */
+show objects in hoteldb_prd.gold
+    limit 10000
+    
+;
+[0m00:20:57.008832 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.328 seconds
+[0m00:20:57.010705 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_silver"
+[0m00:20:57.011195 [debug] [ThreadPool]: On list_hoteldb_prd_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_silver"} */
+show objects in hoteldb_prd.silver
+    limit 10000
+    
+;
+[0m00:20:57.087008 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.086 seconds
+[0m00:20:57.089212 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_gold"
+[0m00:20:57.089713 [debug] [ThreadPool]: On list_hoteldb_prd_gold: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_gold"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:20:57.104436 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.093 seconds
+[0m00:20:57.106371 [debug] [ThreadPool]: Using snowflake connection "list_hoteldb_prd_silver"
+[0m00:20:57.106830 [debug] [ThreadPool]: On list_hoteldb_prd_silver: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "connection_name": "list_hoteldb_prd_silver"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:20:57.129925 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.040 seconds
+[0m00:20:57.169832 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.062 seconds
+[0m00:20:57.179162 [debug] [Thread-2 (]: Began running node model.hoteldb.guest
+[0m00:20:57.179792 [debug] [Thread-3 (]: Began running node model.hoteldb.reservation
+[0m00:20:57.180363 [debug] [Thread-4 (]: Began running node model.hoteldb.room
+[0m00:20:57.181070 [info ] [Thread-2 (]: 1 of 6 START sql table model silver.guest ...................................... [RUN]
+[0m00:20:57.181752 [info ] [Thread-3 (]: 2 of 6 START sql table model silver.reservation ................................ [RUN]
+[0m00:20:57.182400 [info ] [Thread-4 (]: 3 of 6 START sql table model silver.room ....................................... [RUN]
+[0m00:20:57.183046 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_hoteldb_prd_gold, now model.hoteldb.guest)
+[0m00:20:57.183609 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_hoteldb_prd_silver, now model.hoteldb.reservation)
+[0m00:20:57.184534 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_hoteldb_prd, now model.hoteldb.room)
+[0m00:20:57.185076 [debug] [Thread-2 (]: Began compiling node model.hoteldb.guest
+[0m00:20:57.185603 [debug] [Thread-3 (]: Began compiling node model.hoteldb.reservation
+[0m00:20:57.186114 [debug] [Thread-4 (]: Began compiling node model.hoteldb.room
+[0m00:20:57.194774 [debug] [Thread-2 (]: Writing injected SQL for node "model.hoteldb.guest"
+[0m00:20:57.199024 [debug] [Thread-3 (]: Writing injected SQL for node "model.hoteldb.reservation"
+[0m00:20:57.203191 [debug] [Thread-4 (]: Writing injected SQL for node "model.hoteldb.room"
+[0m00:20:57.204220 [debug] [Thread-2 (]: Began executing node model.hoteldb.guest
+[0m00:20:57.205187 [debug] [Thread-3 (]: Began executing node model.hoteldb.reservation
+[0m00:20:57.222314 [debug] [Thread-4 (]: Began executing node model.hoteldb.room
+[0m00:20:57.222852 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:57.226390 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:57.230164 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:57.230720 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+show parameters like 'query_tag' in session
+[0m00:20:57.231310 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+show parameters like 'query_tag' in session
+[0m00:20:57.231828 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+show parameters like 'query_tag' in session
+[0m00:20:57.232380 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:20:57.232897 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:20:57.233382 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:20:57.527747 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.295 seconds
+[0m00:20:57.528608 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.295 seconds
+[0m00:20:57.529326 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.297 seconds
+[0m00:20:57.530956 [debug] [Thread-3 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:57.532362 [debug] [Thread-4 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:57.533721 [debug] [Thread-2 (]: Setting query_tag to 'app=dbt;project=hoteldb_silver'. Will reset to '' after materialization.
+[0m00:20:57.534670 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:57.535481 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:57.536262 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:57.536811 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:57.537333 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:57.537825 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_silver'
+[0m00:20:57.576009 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.037 seconds
+[0m00:20:57.576726 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.038 seconds
+[0m00:20:57.577412 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m00:20:57.598879 [debug] [Thread-3 (]: Writing runtime sql for node "model.hoteldb.reservation"
+[0m00:20:57.601063 [debug] [Thread-2 (]: Writing runtime sql for node "model.hoteldb.guest"
+[0m00:20:57.602935 [debug] [Thread-4 (]: Writing runtime sql for node "model.hoteldb.room"
+[0m00:20:57.604939 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:57.606346 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:57.607052 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+create or replace transient table hoteldb_prd.silver.reservation
+        copy grants as
+        (-- Silver layer: reservation 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    RESERVATION_ID,
+    GUEST_ID,
+    ROOM_ID,
+    TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')) AS CHECK_IN_DATE,
+    TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-')) AS CHECK_OUT_DATE,
+    DATEDIFF(
+        DAY,
+        TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')),
+        TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-'))
+    ) AS NIGHTS_STAYED,
+    TO_NUMBER(REPLACE(TOTAL_AMOUNT, ',', '')) AS TOTAL_AMOUNT,
+    UPPER(CHANNEL) AS CHANNEL,
+    UPPER(STATUS) AS STATUS,
+    IFF(UPPER(STATUS) = 'CANCELLED', TRUE, FALSE) AS IS_CANCELLED,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.bronze.reservation_raw
+        );
+[0m00:20:57.608064 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:57.608711 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+create or replace transient table hoteldb_prd.silver.guest
+        copy grants as
+        (-- Silver layer: guest 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    GUEST_ID,
+    TRIM(GUEST_NAME) AS GUEST_NAME,
+    PHONE,
+    LOWER(EMAIL) AS EMAIL,
+    UPPER(COUNTRY) AS COUNTRY_CODE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.bronze.guest_raw
+        );
+[0m00:20:57.609613 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+create or replace transient table hoteldb_prd.silver.room
+        copy grants as
+        (-- Silver layer: room 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    ROOM_ID,
+    HOTEL_NAME,
+    UPPER(ROOM_TYPE) AS ROOM_TYPE,
+    ROOM_NO,
+    TO_NUMBER(REPLACE(BASE_PRICE, ',', '')) AS BASE_PRICE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.bronze.room_raw
+        );
+[0m00:20:58.299539 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.689 seconds
+[0m00:20:58.307876 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.698 seconds
+[0m00:20:58.314115 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.705 seconds
+[0m00:20:58.322781 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:58.324623 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:58.326453 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:58.326997 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+comment on table hoteldb_prd.silver.room IS $$mart model guest$$;
+[0m00:20:58.327511 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+comment on table hoteldb_prd.silver.guest IS $$mart model guest$$;
+[0m00:20:58.328052 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+comment on table hoteldb_prd.silver.reservation IS $$mart model guest$$;
+[0m00:20:58.377685 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.048 seconds
+[0m00:20:58.378533 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.050 seconds
+[0m00:20:58.385780 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.057 seconds
+[0m00:20:58.401002 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:58.405722 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:58.410359 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:58.411192 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+describe table hoteldb_prd.silver.reservation
+[0m00:20:58.411947 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+describe table hoteldb_prd.silver.guest
+[0m00:20:58.412669 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+describe table hoteldb_prd.silver.room
+[0m00:20:58.449401 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.035 seconds
+[0m00:20:58.450498 [debug] [Thread-4 (]: SQL status: SUCCESS 6 in 0.036 seconds
+[0m00:20:58.451507 [debug] [Thread-3 (]: SQL status: SUCCESS 11 in 0.038 seconds
+[0m00:20:58.472375 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:58.488660 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:58.515352 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:58.515946 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+alter  table hoteldb_prd.silver.guest alter
+    
+        "GUEST_ID" COMMENT $$Primary key for guest$$,
+    
+        "GUEST_NAME" COMMENT $$guest name$$,
+    
+        "PHONE" COMMENT $$phon$$,
+    
+        "EMAIL" COMMENT $$email$$,
+    
+        "COUNTRY_CODE" COMMENT $$country code$$,
+    
+        "CREATED_AT" COMMENT $$create by timezone$$;
+[0m00:20:58.516526 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+alter  table hoteldb_prd.silver.room alter
+    
+        "ROOM_ID" COMMENT $$Primary key for ROOM_ID$$,
+    
+        "HOTEL_NAME" COMMENT $$HOTEL_NAME$$,
+    
+        "ROOM_TYPE" COMMENT $$ROOM_TYPE$$,
+    
+        "ROOM_NO" COMMENT $$ROOM_NO$$,
+    
+        "BASE_PRICE" COMMENT $$BASE_PRICE code$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:58.517087 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+alter  table hoteldb_prd.silver.reservation alter
+    
+        "RESERVATION_ID" COMMENT $$Primary key for RESERVATION_ID$$,
+    
+        "GUEST_ID" COMMENT $$GUEST_ID name$$,
+    
+        "ROOM_ID" COMMENT $$ROOM_ID$$,
+    
+        "CHECK_IN_DATE" COMMENT $$CHECK_IN_DATE$$,
+    
+        "CHECK_OUT_DATE" COMMENT $$CHECK_OUT_DATE code$$,
+    
+        "NIGHTS_STAYED" COMMENT $$$$,
+    
+        "TOTAL_AMOUNT" COMMENT $$TOTAL_AMOUNT$$,
+    
+        "CHANNEL" COMMENT $$CHANNEL$$,
+    
+        "STATUS" COMMENT $$STATUS$$,
+    
+        "IS_CANCELLED" COMMENT $$$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:58.572205 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.054 seconds
+[0m00:20:58.572957 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.055 seconds
+[0m00:20:58.578749 [debug] [Thread-2 (]: No original query_tag, unsetting parameter.
+[0m00:20:58.580324 [debug] [Thread-4 (]: No original query_tag, unsetting parameter.
+[0m00:20:58.581034 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.063 seconds
+[0m00:20:58.582117 [debug] [Thread-2 (]: Using snowflake connection "model.hoteldb.guest"
+[0m00:20:58.582876 [debug] [Thread-4 (]: Using snowflake connection "model.hoteldb.room"
+[0m00:20:58.584334 [debug] [Thread-3 (]: No original query_tag, unsetting parameter.
+[0m00:20:58.584880 [debug] [Thread-2 (]: On model.hoteldb.guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.guest"} */
+alter session unset query_tag
+[0m00:20:58.585387 [debug] [Thread-4 (]: On model.hoteldb.room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.room"} */
+alter session unset query_tag
+[0m00:20:58.586097 [debug] [Thread-3 (]: Using snowflake connection "model.hoteldb.reservation"
+[0m00:20:58.587120 [debug] [Thread-3 (]: On model.hoteldb.reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.reservation"} */
+alter session unset query_tag
+[0m00:20:58.626414 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m00:20:58.627162 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.040 seconds
+[0m00:20:58.634624 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.048 seconds
+[0m00:20:58.637416 [info ] [Thread-3 (]: 2 of 6 OK created sql table model silver.reservation ........................... [[32mSUCCESS 1[0m in 1.45s]
+[0m00:20:58.638202 [info ] [Thread-4 (]: 3 of 6 OK created sql table model silver.room .................................. [[32mSUCCESS 1[0m in 1.45s]
+[0m00:20:58.638946 [info ] [Thread-2 (]: 1 of 6 OK created sql table model silver.guest ................................. [[32mSUCCESS 1[0m in 1.45s]
+[0m00:20:58.639703 [debug] [Thread-3 (]: Finished running node model.hoteldb.reservation
+[0m00:20:58.640368 [debug] [Thread-4 (]: Finished running node model.hoteldb.room
+[0m00:20:58.641032 [debug] [Thread-2 (]: Finished running node model.hoteldb.guest
+[0m00:20:58.642167 [debug] [Thread-6 (]: Began running node model.hoteldb.dim_reservation
+[0m00:20:58.643109 [debug] [Thread-8 (]: Began running node model.hoteldb.dim_room
+[0m00:20:58.644129 [debug] [Thread-5 (]: Began running node model.hoteldb.dim_guest
+[0m00:20:58.644821 [info ] [Thread-6 (]: 4 of 6 START sql table model gold.dim_reservation .............................. [RUN]
+[0m00:20:58.645493 [info ] [Thread-8 (]: 5 of 6 START sql table model gold.dim_room ..................................... [RUN]
+[0m00:20:58.646150 [info ] [Thread-5 (]: 6 of 6 START sql table model gold.dim_guest .................................... [RUN]
+[0m00:20:58.646888 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.hoteldb.dim_reservation'
+[0m00:20:58.647535 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.hoteldb.dim_room'
+[0m00:20:58.648236 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.hoteldb.dim_guest'
+[0m00:20:58.648782 [debug] [Thread-6 (]: Began compiling node model.hoteldb.dim_reservation
+[0m00:20:58.649320 [debug] [Thread-8 (]: Began compiling node model.hoteldb.dim_room
+[0m00:20:58.649856 [debug] [Thread-5 (]: Began compiling node model.hoteldb.dim_guest
+[0m00:20:58.654927 [debug] [Thread-6 (]: Writing injected SQL for node "model.hoteldb.dim_reservation"
+[0m00:20:58.660690 [debug] [Thread-8 (]: Writing injected SQL for node "model.hoteldb.dim_room"
+[0m00:20:58.664788 [debug] [Thread-5 (]: Writing injected SQL for node "model.hoteldb.dim_guest"
+[0m00:20:58.665795 [debug] [Thread-6 (]: Began executing node model.hoteldb.dim_reservation
+[0m00:20:58.666591 [debug] [Thread-8 (]: Began executing node model.hoteldb.dim_room
+[0m00:20:58.670361 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:58.670934 [debug] [Thread-5 (]: Began executing node model.hoteldb.dim_guest
+[0m00:20:58.674493 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:58.675063 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+show parameters like 'query_tag' in session
+[0m00:20:58.679734 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:58.680308 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+show parameters like 'query_tag' in session
+[0m00:20:58.680801 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:20:58.681280 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+show parameters like 'query_tag' in session
+[0m00:20:58.681757 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:20:58.682411 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:20:58.979789 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.298 seconds
+[0m00:20:58.980571 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.300 seconds
+[0m00:20:58.981281 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.299 seconds
+[0m00:20:58.982854 [debug] [Thread-8 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:58.984257 [debug] [Thread-6 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:58.985616 [debug] [Thread-5 (]: Setting query_tag to 'app=dbt;project=hoteldb_gold'. Will reset to '' after materialization.
+[0m00:20:58.986502 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:58.987287 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:58.988048 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:58.988686 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:58.989196 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:58.989684 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+alter session set query_tag = 'app=dbt;project=hoteldb_gold'
+[0m00:20:59.027781 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.037 seconds
+[0m00:20:59.028661 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.038 seconds
+[0m00:20:59.029428 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m00:20:59.031569 [debug] [Thread-6 (]: Writing runtime sql for node "model.hoteldb.dim_reservation"
+[0m00:20:59.033476 [debug] [Thread-5 (]: Writing runtime sql for node "model.hoteldb.dim_guest"
+[0m00:20:59.035275 [debug] [Thread-8 (]: Writing runtime sql for node "model.hoteldb.dim_room"
+[0m00:20:59.037387 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:59.038406 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:59.039156 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+create or replace transient table hoteldb_prd.gold.dim_reservation
+        copy grants as
+        (-- Silver layer: reservation 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    RESERVATION_ID,
+    GUEST_ID,
+    ROOM_ID,
+    TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')) AS CHECK_IN_DATE,
+    TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-')) AS CHECK_OUT_DATE,
+    DATEDIFF(
+        DAY,
+        TO_DATE(REPLACE(CHECK_IN_DATE, '/', '-')),
+        TO_DATE(REPLACE(CHECK_OUT_DATE, '/', '-'))
+    ) AS NIGHTS_STAYED,
+    TO_NUMBER(REPLACE(TOTAL_AMOUNT, ',', '')) AS TOTAL_AMOUNT,
+    UPPER(CHANNEL) AS CHANNEL,
+    UPPER(STATUS) AS STATUS,
+    IFF(UPPER(STATUS) = 'CANCELLED', TRUE, FALSE) AS IS_CANCELLED,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.silver.reservation
+        );
+[0m00:20:59.040185 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:59.040737 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+create or replace transient table hoteldb_prd.gold.dim_guest
+        copy grants as
+        (-- Silver layer: guest 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    GUEST_ID,
+    TRIM(GUEST_NAME) AS GUEST_NAME,
+    PHONE,
+    LOWER(EMAIL) AS EMAIL,
+    COUNTRY_CODE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.silver.guest
+        );
+[0m00:20:59.041691 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+create or replace transient table hoteldb_prd.gold.dim_room
+        copy grants as
+        (-- Silver layer: room 테이블 정제 모델
+-- Co-authored with CoCo
+SELECT
+    ROOM_ID,
+    HOTEL_NAME,
+    UPPER(ROOM_TYPE) AS ROOM_TYPE,
+    ROOM_NO,
+    TO_NUMBER(REPLACE(BASE_PRICE, ',', '')) AS BASE_PRICE,
+    CURRENT_TIMESTAMP() AS CREATED_AT
+FROM hoteldb_prd.silver.room
+        );
+[0m00:20:59.488990 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.447 seconds
+[0m00:20:59.491356 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:59.491953 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+comment on table hoteldb_prd.gold.dim_guest IS $$mart model guest$$;
+[0m00:20:59.500988 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.460 seconds
+[0m00:20:59.502894 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:59.503408 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+comment on table hoteldb_prd.gold.dim_reservation IS $$mart model guest$$;
+[0m00:20:59.505714 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.463 seconds
+[0m00:20:59.507459 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:59.507989 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+comment on table hoteldb_prd.gold.dim_room IS $$mart model guest$$;
+[0m00:20:59.545446 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.053 seconds
+[0m00:20:59.550404 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:59.551179 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+describe table hoteldb_prd.gold.dim_guest
+[0m00:20:59.557344 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.053 seconds
+[0m00:20:59.562410 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:59.563252 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+describe table hoteldb_prd.gold.dim_reservation
+[0m00:20:59.574276 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.066 seconds
+[0m00:20:59.579339 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:59.580210 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+describe table hoteldb_prd.gold.dim_room
+[0m00:20:59.589314 [debug] [Thread-5 (]: SQL status: SUCCESS 6 in 0.037 seconds
+[0m00:20:59.605063 [debug] [Thread-6 (]: SQL status: SUCCESS 11 in 0.041 seconds
+[0m00:20:59.607461 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:59.619101 [debug] [Thread-8 (]: SQL status: SUCCESS 6 in 0.038 seconds
+[0m00:20:59.636304 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:59.636975 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+alter  table hoteldb_prd.gold.dim_guest alter
+    
+        "GUEST_ID" COMMENT $$Primary key for guest$$,
+    
+        "GUEST_NAME" COMMENT $$guest name$$,
+    
+        "PHONE" COMMENT $$phon$$,
+    
+        "EMAIL" COMMENT $$email$$,
+    
+        "COUNTRY_CODE" COMMENT $$country code$$,
+    
+        "CREATED_AT" COMMENT $$create by timezone$$;
+[0m00:20:59.653883 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:59.654590 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+alter  table hoteldb_prd.gold.dim_reservation alter
+    
+        "RESERVATION_ID" COMMENT $$Primary key for RESERVATION_ID$$,
+    
+        "GUEST_ID" COMMENT $$GUEST_ID name$$,
+    
+        "ROOM_ID" COMMENT $$ROOM_ID$$,
+    
+        "CHECK_IN_DATE" COMMENT $$CHECK_IN_DATE$$,
+    
+        "CHECK_OUT_DATE" COMMENT $$CHECK_OUT_DATE code$$,
+    
+        "NIGHTS_STAYED" COMMENT $$$$,
+    
+        "TOTAL_AMOUNT" COMMENT $$TOTAL_AMOUNT$$,
+    
+        "CHANNEL" COMMENT $$CHANNEL$$,
+    
+        "STATUS" COMMENT $$STATUS$$,
+    
+        "IS_CANCELLED" COMMENT $$$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:59.655607 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+alter  table hoteldb_prd.gold.dim_room alter
+    
+        "ROOM_ID" COMMENT $$Primary key for ROOM_ID$$,
+    
+        "HOTEL_NAME" COMMENT $$HOTEL_NAME$$,
+    
+        "ROOM_TYPE" COMMENT $$ROOM_TYPE$$,
+    
+        "ROOM_NO" COMMENT $$ROOM_NO$$,
+    
+        "BASE_PRICE" COMMENT $$BASE_PRICE code$$,
+    
+        "CREATED_AT" COMMENT $$$$;
+[0m00:20:59.708988 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.054 seconds
+[0m00:20:59.710663 [debug] [Thread-5 (]: No original query_tag, unsetting parameter.
+[0m00:20:59.711496 [debug] [Thread-5 (]: Using snowflake connection "model.hoteldb.dim_guest"
+[0m00:20:59.713960 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.057 seconds
+[0m00:20:59.714532 [debug] [Thread-5 (]: On model.hoteldb.dim_guest: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_guest"} */
+alter session unset query_tag
+[0m00:20:59.716011 [debug] [Thread-8 (]: No original query_tag, unsetting parameter.
+[0m00:20:59.717011 [debug] [Thread-8 (]: Using snowflake connection "model.hoteldb.dim_room"
+[0m00:20:59.717521 [debug] [Thread-8 (]: On model.hoteldb.dim_room: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_room"} */
+alter session unset query_tag
+[0m00:20:59.721917 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.066 seconds
+[0m00:20:59.723570 [debug] [Thread-6 (]: No original query_tag, unsetting parameter.
+[0m00:20:59.724360 [debug] [Thread-6 (]: Using snowflake connection "model.hoteldb.dim_reservation"
+[0m00:20:59.724845 [debug] [Thread-6 (]: On model.hoteldb.dim_reservation: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "hoteldb", "target_name": "prd", "node_id": "model.hoteldb.dim_reservation"} */
+alter session unset query_tag
+[0m00:20:59.757408 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.041 seconds
+[0m00:20:59.760150 [info ] [Thread-5 (]: 6 of 6 OK created sql table model gold.dim_guest ............................... [[32mSUCCESS 1[0m in 1.11s]
+[0m00:20:59.760977 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.043 seconds
+[0m00:20:59.761813 [debug] [Thread-5 (]: Finished running node model.hoteldb.dim_guest
+[0m00:20:59.762479 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.037 seconds
+[0m00:20:59.764876 [info ] [Thread-8 (]: 5 of 6 OK created sql table model gold.dim_room ................................ [[32mSUCCESS 1[0m in 1.12s]
+[0m00:20:59.767357 [info ] [Thread-6 (]: 4 of 6 OK created sql table model gold.dim_reservation ......................... [[32mSUCCESS 1[0m in 1.12s]
+[0m00:20:59.768284 [debug] [Thread-8 (]: Finished running node model.hoteldb.dim_room
+[0m00:20:59.769024 [debug] [Thread-6 (]: Finished running node model.hoteldb.dim_reservation
+[0m00:20:59.772939 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m00:20:59.773805 [debug] [Dummy-1   ]: Connection 'model.hoteldb.room' was properly closed.
+[0m00:20:59.774382 [debug] [Dummy-1   ]: Connection 'model.hoteldb.reservation' was properly closed.
+[0m00:20:59.774839 [debug] [Dummy-1   ]: Connection 'model.hoteldb.guest' was properly closed.
+[0m00:20:59.775251 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_reservation' was properly closed.
+[0m00:20:59.775667 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_room' was properly closed.
+[0m00:20:59.776071 [debug] [Dummy-1   ]: Connection 'model.hoteldb.dim_guest' was properly closed.
+[0m00:20:59.776650 [info ] [Dummy-1   ]: 
+[0m00:20:59.777207 [info ] [Dummy-1   ]: Finished running 6 table models in 0 hours 0 minutes and 3.56 seconds (3.56s).
+[0m00:20:59.778737 [debug] [Dummy-1   ]: Command end result
+[0m00:20:59.807585 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m00:20:59.809813 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m00:20:59.815977 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m00:20:59.816476 [info ] [Dummy-1   ]: 
+[0m00:20:59.817115 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
+[0m00:20:59.817613 [info ] [Dummy-1   ]: 
+[0m00:20:59.818199 [info ] [Dummy-1   ]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m00:20:59.819830 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.351076, "process_in_blocks": "0", "process_kernel_time": 1.07, "process_mem_max_rss": "530684", "process_out_blocks": "0", "process_user_time": 5.72}
+[0m00:20:59.820431 [debug] [Dummy-1   ]: Command `cli run` succeeded at 00:20:59.820182 after 6.35 seconds
+[0m00:20:59.820945 [debug] [Dummy-1   ]: Flushing usage events

@@ -1,0 +1,51 @@
+{
+    "path_count": 159,
+    "parsed_path_count": 159,
+    "static_analysis_path_count": 6,
+    "static_analysis_parsed_path_count": 6,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.065799479999896,
+    "load_macros_elapsed": 0.577405649999946,
+    "parse_project_elapsed": 0.6331380780000018,
+    "patch_sources_elapsed": 0.03779497800007903,
+    "process_manifest_elapsed": 0.029282775000069705,
+    "load_all_elapsed": 1.6633019399999966,
+    "projects": [
+        {
+            "project_name": "hoteldb",
+            "elapsed": 0.617572043999985,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.2593789730000253,
+                    "parsed_path_count": 6
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.35071676400002616,
+                    "parsed_path_count": 7
+                }
+            ],
+            "parsed_path_count": 13
+        },
+        {
+            "project_name": "dbt_snowflake",
+            "elapsed": 0.008086929000000964,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.007321967000052609,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 0.00024047600004450942,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        }
+    ]
+}

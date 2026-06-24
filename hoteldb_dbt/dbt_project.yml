@@ -29,10 +29,6 @@ models:
       relation: true                    # 테이블 COMMENT에 description 반영
       columns: true                     # 컬럼 COMMENT에 description 반영
     +copy_grants: true                  # 모델 재생성 시 기존 GRANT 유지 (PROD 필수)
-    bronze:
-      +materialized: table
-      +schema : bronze 
-      +query_tag: 'app=dbt;project=hoteldb_bronze'  # QUERY_HISTORY에서 추적용      
     silver:
       +materialized: table
       +schema : silver
