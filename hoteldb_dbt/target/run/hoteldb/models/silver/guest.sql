@@ -8,7 +8,7 @@
 -- Co-authored with CoCo
 SELECT
     GUEST_ID,
-    TRIM(GUEST_NAME) AS GUEST_NAME,
+    TRIM(GUEST_NAME) || '_nickname' AS GUEST_NAME,
     PHONE,
     LOWER(EMAIL) AS EMAIL,
     UPPER(COUNTRY) AS COUNTRY_CODE,
